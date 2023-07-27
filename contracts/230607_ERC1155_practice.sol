@@ -39,6 +39,7 @@ contract RAINBOW is ERC1155 {
         return _list;
     }
 
+    //해당주소에서 [1,2,3,4,5]번이 몇개 있어? 물어 볼 수 있는 함수
     function getBalanceOfBatch(uint[] memory _tokenIds) public view returns(uint[] memory) {
         return balanceOfBatch(getBatchAddresses(_tokenIds.length), _tokenIds);
     } 
