@@ -4,9 +4,11 @@ pragma solidity ^0.8.19;
 contract B {
   uint public b;
 
+//constructor 사용
+//migration작성시 입력필요
   constructor(uint _b){
     b = _b;
-  }//migration작성시 일력필요
+  }
 
   function setB(uint _b) public {
     b = _b;
