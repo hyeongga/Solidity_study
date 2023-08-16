@@ -14,6 +14,35 @@ contract Time {
     function currentBlockNumber() public view returns(uint){
         return block.number;
     } //전역변수도 view사용
+
+    //timestamp에 숫자 혹은 날짜 더하기 가능
+    function getTime() public view returns(uint) {
+        return block.timestamp + 100;
+    }
+
+    function getTime2() public view returns(uint) {
+        return block.timestamp + 10 seconds;
+    }
+
+    function getTime3() public view returns(uint) {
+        return block.timestamp + 10 minutes;
+    }
+
+    function getTime4() public view returns(uint) {
+        return block.timestamp + 1 hours;
+    }
+
+    function getTime5() public view returns(uint) {
+        return block.timestamp + 1 days;
+    }
+
+    function getTime6() public view returns(uint) {
+        return block.timestamp + 1 weeks;
+    }
+
+    /*function getTime7() public view returns(uint) {
+        return block.timestamp + 1 years; //0.5.0부터 없어짐
+    }*/
     
 
 }
